@@ -73,7 +73,7 @@
 * status: true/false
 
 ## Price info
-### POST /fbm-price/
+### POST /fbm-price
 #### Request Body (JSON)
 
 <pre>
