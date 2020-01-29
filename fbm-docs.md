@@ -10,15 +10,17 @@
   platform: { type: String },
   maximumBuyOutPrice: { type: Number },
   stock : { type: number }
+  timestamp: { type: Number }
   hash: { type: String }
 }
 </pre>
 * user: your username in our system
 * platform: ```xbox``` or ```ps4```
 * maximumBuyOutPrice: this is the maximum price of card what you can buy 
-* stock: total user stock
+* stock: total user available coins for sell
+* timestamp: unix timestamp
 * hash: MD5 hash of the concatenated values + SECRET_WORD
-  * md5(user.SECRET_WORD)
+  * md5(user.timestamp.SECRET_WORD)
 
 
 
@@ -51,6 +53,7 @@
   user: { type: String },
   transactionID: { type: Number },
   status: { type: String }, 
+  timestamp: { type: Number }
   hash: { type: String }
 }
 </pre>
@@ -58,8 +61,9 @@
 * user: your username in our system
 * transactionID: the assigned transaction ID in our system
 * status: ```bought``` or ```cancel``` 
+* timestamp: unix timestamp
 * hash: MD5 hash of the concatenated values + SECRET_WORD
-  * md5(user.SECRET_WORD)
+  * md5(user.timestamp.SECRET_WORD)
 
 #### Response Body (JSON)
 <pre>
@@ -80,14 +84,16 @@
 {
   user: { type: String },
   platform: { type: String },
+  timestamp: { type: Number }
   hash: { type: String }
 }
 </pre>
 
 * user: your username in our system
 * platform: ```xbox``` or  ```ps4``` 
+* timestamp: unix timestamp
 * hash: MD5 hash of the concatenated values + SECRET_WORD
-  * md5( user.SECRET_WORD )
+  * md5(user.timestamp.SECRET_WORD)
 
 #### Response Body (JSON)
 <pre>
