@@ -32,6 +32,7 @@
   transactionID: { type: Number },
   tradeID: { type: Number },
   assetID: { type: Number }, 
+  resourceID: { type: Number }, 
   startPrice: { type: Number },
   coinAmount: { type: Number }, 
 </pre>
@@ -39,6 +40,7 @@
 * code: response code
 * transactionID: the assigned transaction ID from our system
 * tradeID: the trade ID from the EA transfer market
+* resourceID: resource ID of the card
 * assetID: the ID of the player
 * playerName: the name of the player  
 * startPrice: bidding start price
