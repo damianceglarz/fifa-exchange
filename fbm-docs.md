@@ -1,7 +1,7 @@
 # FBM API
 
 ## Get trade
-### POST /fbm-request
+### POST /fbm-request/
 #### Request Body (JSON)
 
 <pre>
@@ -43,7 +43,7 @@
 * coinAmount: buy now price  
 
 ## Update Status
-### POST /fbm-status
+### POST /fbm-status/
 #### Request Body (JSON)
 
 <pre>
@@ -73,7 +73,7 @@
 * status: true/false
 
 ## Price info
-### POST /fbm-price
+### POST /fbm-price/
 #### Request Body (JSON)
 
 <pre>
