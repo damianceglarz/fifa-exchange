@@ -55,8 +55,9 @@
   user: { type: String },
   transactionID: { type: Number },
   status: { type: String }, 
-  timestamp: { type: Number }
-  hash: { type: String }
+  timestamp: { type: Number },
+  hash: { type: String },
+  emailHash: { type: String },
 }
 </pre>
 
@@ -66,6 +67,7 @@
 * timestamp: unix timestamp
 * hash: MD5 hash of the concatenated values + SECRET_WORD
   * md5(user.timestamp.SECRET_WORD)
+* emailHash: md5 of FUT ACCOUNT email which were used to buy a card () 
 
 #### Response Body (JSON)
 <pre>
