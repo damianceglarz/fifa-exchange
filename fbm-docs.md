@@ -11,8 +11,7 @@
   maximumBuyOutPrice: { type: Number },
   stock : { type: number },
   timestamp: { type: Number },
-  hash: { type: String },
-  ignoreHash: {type: array}
+  hash: { type: String }, 
 }
 </pre>
 * user: your username in our system
@@ -21,8 +20,7 @@
 * stock: total user available coins for sell
 * timestamp: unix timestamp
 * hash: MD5 hash of the concatenated values + SECRET_WORD
-  * md5(user.timestamp.SECRET_WORD)
-* ignoreHash: array of hashed FUT ACCOUNT emails which can't be used to buy given card 
+  * md5(user.timestamp.SECRET_WORD) 
 
 
 
