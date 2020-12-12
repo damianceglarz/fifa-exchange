@@ -11,8 +11,7 @@
   maximumBuyOutPrice: { type: Number },
   stock : { type: number },
   timestamp: { type: Number },
-  hash: { type: String }, 
-  ignoreHash: {type: array}
+  hash: { type: String }
 }
 </pre>
 * user: your username in our system
@@ -22,7 +21,6 @@
 * timestamp: unix timestamp
 * hash: MD5 hash of the concatenated values + SECRET_WORD
   * md5(user.timestamp.SECRET_WORD) 
-* ignoreHash: array of hashed FUT ACCOUNT emails which can't be used to buy given card 
 
 
 
@@ -37,6 +35,7 @@
   resourceID: { type: Number }, 
   startPrice: { type: Number },
   coinAmount: { type: Number }, 
+  ignoreHash: {type: array}
 </pre>
 
 * code: response code
@@ -47,6 +46,7 @@
 * playerName: the name of the player  
 * startPrice: bidding start price
 * coinAmount: buy now price  
+* ignoreHash: array of hashed FUT ACCOUNT emails which can't be used to buy given card 
 
 ## Update Status
 ### POST /fbm-status/
